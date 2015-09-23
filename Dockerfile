@@ -1,6 +1,6 @@
 FROM sebest/rsyslog
 
-COPY conf/logmatic.tmpl /etc/rsyslog-docker.d/
+COPY conf/logmatic.tmpl /rsyslog-logmatic.tmpl
 
 COPY start /
 

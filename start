@@ -15,6 +15,6 @@ export LOGMATIC_TAGS=`echo $LOGMATIC_TAGS | sed -e s,'"','\\\\\\\"',g`
 sed -e s,__LOGMATIC_TOKEN__,"$LOGMATIC_TOKEN",g \
     -e s,__LOGMATIC_TAGS__,"$LOGMATIC_TAGS",g \
     -e s,__LOGMATIC_HOSTNAME__,"$LOGMATIC_HOSTNAME",g \
-    /etc/rsyslog-docker.d/logmatic.tmpl > /etc/rsyslog-docker.d/01-default.conf
+    /rsyslog-logmatic.tmpl > /etc/rsyslog.d/50-logmatic.conf
 
 exec rsyslogd -n
