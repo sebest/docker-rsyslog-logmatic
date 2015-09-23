@@ -1,0 +1,9 @@
+# ensure that the appname is not empty
+if strlen($app-name) == 0 then {
+  set $!new-appname = "-";
+} else {
+  set $!new-appname = $app-name;
+}
+
+$template LogmaticFormat,"__LOGMATIC_TOKEN__ <%pri%>%protocol-version% %timestamp:::date-rfc3339% __LOGMATIC_HOSTNAME__ %$!new-appname% - - [meta __LOGMATIC_TAGS__] %msg%\n"
+*.* @@api.logmatic.io:10514;LogmaticFormat
