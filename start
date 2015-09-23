@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if test ! -n "$LOGMATIC_TOKEN"; then
    echo 'LOGMATIC_TOKEN is required!'
