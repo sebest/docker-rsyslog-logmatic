@@ -17,4 +17,4 @@ sed -e s,__LOGMATIC_TOKEN__,"$LOGMATIC_TOKEN",g \
     -e s,__LOGMATIC_HOSTNAME__,"$LOGMATIC_HOSTNAME",g \
     /rsyslog-logmatic.tmpl > /etc/rsyslog.d/50-logmatic.conf
 
-exec rsyslogd -n
+exec /usr/sbin/rsyslogd -n

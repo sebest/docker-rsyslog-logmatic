@@ -4,4 +4,4 @@ COPY conf/logmatic.tmpl /rsyslog-logmatic.tmpl
 
 COPY start /
 
-ENTRYPOINT /start
+ENTRYPOINT ["/start"]
