@@ -6,7 +6,7 @@ This Docker image acts as a syslog relay to send your logs to `logmatic.io`.
 
 The `rsyslog-logmatic` image takes all of its configuration from environment variables.
 
-| Name              | Description                                                                     | Requried |
+| Name              | Description                                                                     | Required |
 |-------------------|---------------------------------------------------------------------------------|----------|
 | LOGMATIC_TOKEN    | Your logmatic.io TOKEN                                                          | Yes      |
 | LOGMATIC_TAGS     | Some tags to send with every message the (eg: role="web" env="prod")            | No       |
