@@ -1,6 +1,6 @@
 # rsyslog-logmatic
 
-This Docker image acts as a syslog relay to send your logs to `logmatic.io`.
+This Docker image acts as a syslog relay to send your logs to [logmatic.io](http://logmatic.io/).
 
 ## Usage
 
